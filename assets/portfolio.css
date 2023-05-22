@@ -28,17 +28,17 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: capitalize;
-}
-body {
   background-color: white;
   color: #010101;
 }
+
 /* dark theme */
 body.dark {
   color: white;
   background-color: rgb(2 2 2 / 91%);
 }
-body.dark header .personal-accounts a {
+body.dark header .personal-accounts a,
+body.dark section .container .skills-info .skills-box h3 {
   color: var(--color-main-writing);
 }
 body.dark header .personal-accounts a:hover {
@@ -46,28 +46,17 @@ body.dark header .personal-accounts a:hover {
 }
 body.dark header .download-cv a {
   background-color: var(--color-light-gray-layer);
-
   color: var(--color-main-writing);
 }
-
-body.dark section .container .section-nav {
-  background-color: var(--color-light-gray-layer);
-}
-body.dark section .container .section-nav > div {
-  background-color: var(--color-tab);
-  color: var(--color-main-writing);
-}
+body.dark section .container .section-nav,
 body.dark section .container .skills-info .skills-box {
   background-color: var(--color-light-gray-layer);
 }
-body.dark section .container .skills-info .skills-box h3 {
-  color: var(--color-main-writing);
-}
+body.dark section .container .section-nav > div,
 body.dark section .container .skills-info .skills-box .box .skill {
   background-color: var(--color-tab);
   color: var(--color-main-writing);
 }
-
 body.dark footer {
   background-color: var(--color-light-gray-layer);
   color: var(--color-main-writing);
@@ -234,7 +223,7 @@ section .container .projects .project > .project-info {
   flex-direction: row;
   column-gap: 20px;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 section .container .projects .project > .project-info a > i {
   font-size: 25px;
